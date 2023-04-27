@@ -92,22 +92,22 @@ Ao aplicar um filtro 3x3, estamos indicando que os pixels adjacentes a um determ
 
 Em função dos valores na matriz, podemos transformar a imagem de diferentes formas. As matrizes a seguir correspondem às imagens apresentadas acima na aplicação dos filtros de sharpening e blurring.
 
-$$
+```math
 \begin{pmatrix}
  0 & -1 &  0\\ 
 -1 &  5 & -1\\ 
  0 & -1 &  0
 \end{pmatrix}
-$$
+```
 *Matriz para o filtro de sharpening*.
 
-$$
+```math
 \begin{pmatrix}
 1/9 & 1/9 & 1/9 \\ 
 1/9 & 1/9 & 1/9 \\ 
 1/9 & 1/9 & 1/9 
 \end{pmatrix}
-$$
+```
 *Matriz para o filtro de blurring*.
 
 Como os valores da máscara são "pesos", esses valores serão multiplicadores dos valores RGB de cada pixel. Por exemplo, se aplicarmos a máscara de sharpening acima no pixel (1,1) de uma imagem, o valor de seu componente R do pixel será 5x o valor de seu R menos a soma dos valores R de seus adjacentes ortagonais (horizontal e vertical). Veja que, como os cantos da matriz valem 0, os adjacentes diagonais não irão influenciar na cor resultante. Na matriz de blurring acima, o valor de cada componente (R, G e B) será a média dele e seus adjacentes.
