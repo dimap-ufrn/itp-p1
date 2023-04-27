@@ -121,19 +121,27 @@ Seu programa deve receber como argumento o nome da transformação a ser realiza
 * `sharp`: para aumentar a nitidez da imagem (aplicar o filtro de sharpening);
 * `blur`: para reduzir a nitidez da imagem (aplicar o filtro de blurring).
 
-Os dados da imagem original devem ser lidos da entrada-padrão (`cin`) no formato PPM P3 e os dados da nova imagem (após a transformação) devem ser enviados para a saída-padrão.
+Os dados da imagem original devem ser lidos da entrada-padrão (`cin`) no formato PPM P3 e os dados da nova imagem (após a transformação) devem ser enviados para a saída-padrão (`cout`).
 
-Digamos, por exemplo, que seu programa (após compilado) se chame `procimg` e você queira rotacionar a imagem `imgs/galinhos.ppm` gerando uma nova imagem chamada `imgs/rot.ppm`. Você irá então executar:
+Digamos, por exemplo, que seu programa (após compilado) se chame `procimg` e você queira rotacionar a imagem `imgs/galinhos.ppm` gerando uma nova imagem chamada `imgs/rotate.ppm`. Você irá então executar:
 
 ```sh
-$ ./procimg rotate < imgs/galinhos.ppm > imgs/rot.ppm
+$ ./procimg rotate < imgs/galinhos.ppm > imgs/rotate.ppm
 ```
 
-Esse comando indicará que a transformação desejada é `rotate`, que a leitura de dados da entrada-padrão será feita a partir do arquivo `imgs/galinhos.ppm` e que, ao invés do resultado ser enviado para o terminal, ele será enviado para um novo arquivo chamado `imgs/rot.ppm`.
+Esse comando indicará que a transformação desejada é `rotate`, que a leitura de dados da entrada-padrão será feita a partir do arquivo `imgs/galinhos.ppm` e que, ao invés do resultado ser enviado para o terminal, ele será enviado para um novo arquivo chamado `imgs/rotate.ppm`.
 
-Seu programa não precisa tratar imagens de qualquer tamanho. Considere que as imagens a ser tratadas terão dimensões de no máximo 128 pixels. Essa restrição irá facilitar a implementação da solução.
+Neste projeto, seu programa não precisa tratar imagens de qualquer tamanho. Considere que as imagens a serem manipuladas terão dimensões de no máximo 128 pixels. Essa restrição irá facilitar a implementação da solução.
 
 Na pasta `imgs`, há um conjunto de imagens para você testar sua solução. As imagens `gray.ppm`, `enlarge.ppm`, `reduce.ppm`, `rotate.ppm`, `sharp.ppm` e `blur.ppm` são resultantes das transformações correspondentes sobre a imagem `galinhos.ppm`, que tem dimensão 72 x 128 pixels.
+
+Caso queira ver se as saídas de seu programa são iguais aos arquivos de exemplo, utilize o utilitário `diff` do Linux. Por exemplo:
+
+```sh
+$ diff imgs/rotate.ppm my_rotate.ppm
+```
+
+Se nenhum linha diferente for apresentada, é porque a operação foi implmentada corretamente. Nas transformações com aplicação de máscaras, atente para as bordas das imagens. Se a máscara ultrapassar os limites da imagem, use o pixel da borda.
 
 Seu projeto deverá ser submetido via git até a data indicada na turma no Github Classroom.
 
