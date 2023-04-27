@@ -8,7 +8,6 @@ Processamento de imagem é qualquer processo de transformação de dados no qual
 
 Para a realização do projeto, faz-se necessário apresentar alguns conceitos básicos de processamento de imagem, a começar como elas são representadas em arquivos e depois como essas representações podem ser manipuladas.
 
-
 ## Representações de imagens através de bitmaps
 
 Imagens digitais são normalmente representadas de duas formas: ou vetorial ou raster. A primeira usa figuras geométricas (como polígonos, circunferências, entre outros) para definir objetos a serem usados na composição da imagem. A segunda forma é uma representação em que há uma correspondência de cada pixel da imagem a um conjunto de informações (como cor, transparência etc.). Dizemos que esta última forma é uma representação “ponto-a-ponto” da imagem, normalmente realizada através de uma matriz onde cada célula contém a informação de um ponto, também conhecida como “mapa de bits” ou bitmap.
@@ -110,7 +109,7 @@ Em função dos valores na matriz, podemos transformar a imagem de diferentes fo
 ```
 *Matriz para o filtro de blurring*.
 
-Como os valores da máscara são "pesos", esses valores serão multiplicadores dos valores RGB de cada pixel. Por exemplo, se aplicarmos a máscara de sharpening acima no pixel (1,1) de uma imagem, o valor de seu componente R do pixel será 5x o valor de seu R menos a soma dos valores R de seus adjacentes ortagonais (horizontal e vertical). Veja que, como os cantos da matriz valem 0, os adjacentes diagonais não irão influenciar na cor resultante. Na matriz de blurring acima, o valor de cada componente (R, G e B) será a média dele e seus adjacentes.
+Como os valores da máscara são "pesos", esses valores serão multiplicadores dos valores RGB de cada pixel. Por exemplo, se aplicarmos a máscara de sharpening acima no pixel (1,1) de uma imagem, o valor de seu componente R do pixel será 5x o valor de seu R menos a soma dos valores R de seus adjacentes ortogonais (horizontal e vertical). Veja que, como os cantos da matriz valem 0, os adjacentes diagonais não irão influenciar na cor resultante. Na matriz de blurring acima, o valor de cada componente (R, G e B) será a média dele e seus adjacentes.
 
 # O Programa
 
