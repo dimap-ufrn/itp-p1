@@ -141,7 +141,7 @@ Caso queira ver se as saídas de seu programa são iguais aos arquivos de exempl
 $ diff imgs/rotate.ppm my_rotate.ppm
 ```
 
-Se nenhum linha diferente for apresentada, é porque a operação foi implmentada corretamente. Nas transformações com aplicação de máscaras, atente para as bordas das imagens. Se a máscara ultrapassar os limites da imagem, use o pixel da borda.
+Se nenhuma linha diferente for apresentada, é porque a operação foi implementada corretamente. Nas transformações com aplicação de máscaras, atente para as bordas das imagens. Se a máscara ultrapassar os limites da imagem, use o pixel da borda.
 
 Seu projeto deverá ser submetido via git até a data indicada na turma no Github Classroom.
 
