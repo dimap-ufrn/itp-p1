@@ -33,3 +33,5 @@
 
 # Solution
 solution.*
+
+.vscode/settings.json
