@@ -45,6 +45,8 @@ As demais linhas do arquivo se referem aos valores RGB dos pixels da imagem. Ou 
 Neste projeto, os arquivos de imagem utilizarão sempre o formato PPM P3 com o valor de qualidade fixo em 255. As dimensões podem, entretanto, variar.
 
 
+
+
 ## Transformações de imagens
 
 ### Transformação em escala de cinza
