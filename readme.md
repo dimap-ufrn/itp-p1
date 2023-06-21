@@ -133,8 +133,6 @@ $ ./procimg rotate < imgs/galinhos.ppm > imgs/rotate.ppm
 
 Esse comando indicará que a transformação desejada é `rotate`, que a leitura de dados da entrada-padrão será feita a partir do arquivo `imgs/galinhos.ppm` e que, ao invés do resultado ser enviado para o terminal, ele será enviado para um novo arquivo chamado `imgs/rotate.ppm`.
 
-Neste projeto, seu programa não precisa tratar imagens de qualquer tamanho. Considere que as imagens a serem manipuladas terão dimensões de no máximo 128 pixels. Essa restrição irá facilitar a implementação da solução.
-
 Na pasta `imgs`, há um conjunto de imagens para você testar sua solução. As imagens `gray.ppm`, `enlarge.ppm`, `reduce.ppm`, `rotate.ppm`, `sharp.ppm` e `blur.ppm` são resultantes das transformações correspondentes sobre a imagem `galinhos.ppm`, que tem dimensão 72 x 128 pixels.
 
 Caso queira ver se as saídas de seu programa são iguais aos arquivos de exemplo, utilize o utilitário `diff` do Linux. Por exemplo:
@@ -167,4 +165,3 @@ A nota correspodente ao projeto seguirá os critérios e distribuição abaixo:
 * O projeto deve ser desenvolvido individualmente ou em dupla. Não serão permitidos grupos com três ou mais alunos.
 * Cada dupla deve desenvolver sua solução de forma independente das demais. Soluções idênticas serão consideradas plágios e, portanto, sanções serão devidamente aplicadas em todas as duplas com soluções similares.
 * Caso algum trecho de código seja utilizado da web ou gerado via IA, essa informação deve estar presente na documentação do projeto.
-* A solução apresentada poderá usar recursos de C++ além dos que foram apresentados em sala de aula. Porém, não haverá pontuação adicional por isso.
