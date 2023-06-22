@@ -1,5 +1,8 @@
 # Processamento de imagens
 
+
+
+
 Processamento de imagem é qualquer processo de transformação de dados no qual a entrada e saída são imagens, tais como fotografias ou quadros de vídeo. Neste projeto, você irá criar um programa que realize transformações simples em imagens. Ele deverá realizar as seguintes operações:
 * Transformação de uma imagem colorida em escada de cinza;
 * Ampliação/redução de uma imagem (2x);
