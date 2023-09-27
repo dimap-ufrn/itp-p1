@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Author: eu
+
 /**
  * Imprime uma ajuda explicando como o programa deve ser usado.
  * @param program_name Nome do arquivo executável.
